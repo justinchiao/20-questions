@@ -1,0 +1,10 @@
+Internal Node
+Is it bigger than a breadbox?
+Internal Node
+Is it gray?
+Leaf
+an elephant
+Leaf
+a tiger
+Leaf
+a mouse
