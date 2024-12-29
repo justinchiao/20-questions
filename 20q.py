@@ -6,16 +6,17 @@ smallTree = \
         ("a mouse", None, None))
 
 mediumTree = \
-    ("Is it bigger than a breadbox?",
+    ("Is it a land animal",
         ("Is it gray?",
             ("an elephant", None, None),
             ("a tiger", None, None)),
-        ("a mouse", None, None))
+        ("a whale", None, None))
 
 def main():
     """runs main part of game"""
-    # importTree = pickle.load(open('tree.p', 'rb'))
-    newTree=play(mediumTree)
+    importTree = pickle.load(open('tree.p', 'rb'))
+    newTree=play(importTree)
+    # newTree=play(mediumTree)
     
     while True:
         replay=input('Would you like to play again?\ny or n\n')
@@ -54,7 +55,7 @@ def playLeaf(tree):
     elif ans == 'n':
         newObject= input('\nWhat was it?\n')
 
-        newQuestion= input("\nWhat's a question that distinguishes between " + tree[0] + ' and ' + newObject + '?\n')
+        newQuestion= input("\nWhat's a yes/no question that distinguishes between " + tree[0] + ' and ' + newObject + '?\n')
 
         newAns= input("\nwhat's the answer for " + newObject + "?\n"+'y or n\n')
 
@@ -65,7 +66,7 @@ def playLeaf(tree):
 
     else:
         print('Please enter valid answer \n')
-        return play(tree)
+        return playLeaf(tree)
 
 def play(tree):
     """This function accepts a single argument, which is a tree, and plays the game once by using the tree to guide its questions. However, instead of returning just True or False, play returns a new tree that is the result of playing the game on the original tree and learning from the answers."""

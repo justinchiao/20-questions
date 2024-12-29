@@ -1,10 +1,54 @@
 Internal Node
-Is it bigger than a breadbox?
+Is it a land animal
 Internal Node
 Is it gray?
+Internal Node
+Does it have a trunk?
 Leaf
 an elephant
+Internal Node
+Does it have a horn?
+Leaf
+a rhino
+Internal Node
+Does it fly?
+Leaf
+an owl
+Leaf
+a hippo
+Internal Node
+Does it have stripes?
+Internal Node
+Does it have hooves?
+Leaf
+a Zebra
 Leaf
 a tiger
+Internal Node
+Does it roar?
 Leaf
-a mouse
+a lion
+Internal Node
+Is it a carnivore?
+Leaf
+a wolf
+Leaf
+a panda
+Internal Node
+Does it have gills?
+Internal Node
+Is it a predator animal?
+Internal Node
+Does it have tentacles?
+Leaf
+an octopus
+Leaf
+a shark
+Leaf
+a tuna
+Internal Node
+Does it have a dorssal fin?
+Leaf
+a Dolphin
+Leaf
+a whale
